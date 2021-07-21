@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body{
+	margin: 0px;
+    font-family: 'MapoFlowerIsland', 'Noto Sans KR', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/test3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+}
+/* 네비게이션바 */
+.nav_var {
+	position: fixed;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_var_text {
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    height: 64px;
+    width: 775px;
+    border-radius: 2px 2px 30px 30px;
+}
+
+.nav_var ul {
+    list-style: none;
+    margin: 0;
+}
+
+.nav_var_text_li {
+    margin-right: 3rem;
+    padding: 1.5rem;
+    float: right;
+    border: 0;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.portfollo_header {
+	height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.portfollo_header_text {
+	padding: 300px;
+}
+
+.portfollo_header_text h1 {
+	font-size: 40px;
+}
+
+.portfollo_aboutMe {
+	background-color: #fff;
+}
