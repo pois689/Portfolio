@@ -97,6 +97,7 @@ body{
 .profile_aboutMe_area_img {
 	width : 30%;
 	height: 400px;
+	margin-right: 8%;
 }
 
 .profile_aboutMe_area_text {
@@ -105,11 +106,9 @@ body{
 }
 
 .division {
-    left: 1rem;
-    width: 1px;
-    height : 200px;
+    margin: 15px 0px;
     background: #666666;
-    margin: 0px 5%;
+    height: 1px;
 }
 
 .graduation {
