@@ -5,6 +5,11 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 <link rel="stylesheet" href="./css/portfolloPage.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<!-- font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&amp;;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&amp;;display=swap" rel="stylesheet">
 </head>
 <body style="height: 100%;">
 <script> 
@@ -26,15 +31,108 @@
 	</div>
 </div>
 <!-- 네비게이션바 end -->
-
 <section class="portfollo_header">
 	<div class="portfollo_header_text">
-		<h1 data-aos="fade-right">개발자 꿈나무 김승현 입니다.</h1>
+		<h1 data-aos="fade-right">매 순간 도전하는 삶을 살아온 김승현 입니다.</h1>
 	</div>
 </section>
-
-<section class="portfollo_aboutMe">
-	<h1>자기소개 test 성공 test</h1>
+<!-- aboutMe -->
+<section class="about">
+	<h1 class="title">About</h1>
+	<p class="about_text">저는 매 순간 도전을 멈추지 않았습니다.
+	개발자를 목표로 다양한 연수과정에 참가하여 직무능력을 향상시키기 위해 끊임없이 도전하고 노력했습니다.
+	그 결과 실력을 탄탄히 쌓을 수 있었고, 다양한 프로젝트 경험을 얻을 수 있었습니다.
+	<strong>항상 새로운 것을 배우기 위해 도전할 것이며, 뒤쳐지지 않는 인재가 되겠습니다.</strong>
+	</p>
+</section>
+<!-- 이력 소개 -->
+<section class="profile">
+	<h1 class="title">Profile</h1>
+	<div class="profile_aboutMe_area">
+		<div class="profile_aboutMe_area_img">
+			<img class="profile_img" alt="profile" src="./images/profile.jpg">
+			<div>김승현</div>
+			<div>1995.02.17</div>
+			<div>경기도 광명시 거주</div>
+		</div>
+		<hr class="division">
+		<div class="profile_aboutMe_area_text">
+			<div class="graduation">
+				<h3>학력</h3>
+				<ul>
+					<li>유한대학교 정보통신학과 졸업</li>
+					<li>광문고등학교 졸업</li>
+				</ul>
+			</div>
+			<div class="activity">
+				<h3>활동</h3>
+				<ul style="line-height: 35px;">
+					<li>
+						<span class="institution">한국 소프트웨어 기술진흥 협회</span>
+						<span class="date">2019.04.29 ~ 2019.08.29</span>
+						<br>
+						<span>SW인재 양성 과정 참가</span>
+					</li>
+					<li>
+						<span class="institution">더조은 컴퓨터 아트 학원</span>
+						<span class="date">2020.05.28 ~ 2020.08.26</span>
+						<br>
+						<span>게임 프로그래밍 양성 과정 참가</span>
+					</li>
+					<li>
+						<span class="institution">월드잡 프렌즈</span>
+						<span class="date">2020.12.07 ~ 2021.06.28</span>
+						<br>
+						<span>소프트웨어 연수 과정 참가 (일본 취업 과정)</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 스킬 -->
+<section class="skill">
+	<h1 class="title">Skill</h1>
+	
+	<h2 class="skill_content">Front-end</h2>
+	<div style="text-align: center;">
+		<img class="skill_icon" alt="html" src="./images/html.png">
+		<img class="skill_icon" alt="html" src="./images/css.png">
+		<img class="skill_icon" alt="html" src="./images/javascript.png">
+	</div>
+	
+	<h2 class="skill_content">Back-end</h2>
+	<div style="text-align: center;">
+	<img class="skill_icon" alt="html" src="./images/java.jpg">
+	<img class="skill_icon" alt="html" src="./images/oracle.png">
+	</div>
+	
+	<h2 class="skill_content">etc</h2>
+	<div style="text-align: center;">
+		<img class="skill_icon" alt="html" src="./images/linux.jpg">
+		<img class="skill_icon" alt="html" src="./images/c.png">
+	</div>
+	
+	<h2 class="skill_content">Tool</h2>
+	<div style="text-align: center;">
+		<img class="skill_icon" alt="html" src="./images/eclipse.png">
+		<img class="skill_icon" alt="html" src="./images/sts.png">
+		<img class="skill_icon" alt="html" src="./images/sql.jpg">
+		<img class="skill_icon" alt="html" src="./images/unity.jpg">
+	</div>
+	
+	<h2 class="skill_content">Business Tool</h2>
+	<div style="text-align: center;">
+		<img class="skill_icon" alt="html" src="./images/slack.png">
+		<img class="skill_icon" alt="html" src="./images/trello.png">
+		<img class="skill_icon" alt="html" src="./images/clickup.png">
+		<img class="skill_icon" alt="html" src="./images/github.png">
+	</div>
+	
+</section>
+<!-- project -->
+<section class="project">
+	
 </section>
 
 <div align="center" style="padding: 200px 0px;">
@@ -43,6 +141,8 @@
    data-aos-duration="2000"
    class="b">
     flip-left
+    <i class="fas fa-clock"></i>
+	<i class="fas fa-user-friends"></i>
   </div>
 </div>
 
