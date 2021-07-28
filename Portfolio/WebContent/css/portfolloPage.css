@@ -13,6 +13,7 @@ body{
     -ms-word-break: keep-all;
     word-break: keep-all;
     font-size: 17px;
+    width: 100%
 }
 
 /* 네비게이션바 */
@@ -81,6 +82,7 @@ body{
 	font-size: 35px;
 	color: #555555;
 	padding: 20px 0px;
+	margin-bottom: 3%;
 }
 
 .profile {
@@ -164,5 +166,41 @@ li {list-style: none;}
 	font-weight: 600;
 }
 
+.project_imgbox {
+	overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0 3% 5% 0%;
+}
 
+.pc_img {
+	width: 800px;
+}
+
+.project_imgbox:nth-child(1):after {
+    content: "";
+    position: absolute;
+    transform: translateX(-108%);
+    top: 42.5px;
+    width: 689px;
+    height: 390px;
+    background: url(../images/suhbuway.png);
+    background-size: cover;
+}
+
+.project_box {
+	display: flex;
+	justify-content: center;
+}
+
+.project_textbox_title{
+	color: #767676;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.footer {
+	background-color: #F9F7F0;
+	height: 300px;
+}
 

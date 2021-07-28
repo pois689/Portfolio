@@ -10,8 +10,14 @@
 <!-- font -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&amp;;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&amp;;display=swap" rel="stylesheet">
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
-<body style="height: 100%;">
+<body>
 <script> 
    AOS.init();
 </script>
@@ -132,20 +138,51 @@
 	
 </section>
 <!-- project -->
-<section class="project">
-	
+<section class="project" style="background-color: #e2e2e2;">
+	<h1 class="title">Project</h1>
+	<!-- Slider main container -->
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide">
+	    	<div class="project_box">
+		    	<div class="project_imgbox">
+		    		<img alt="pc" src="./images/pc.png" class="pc_img">
+		    	</div>
+		    	<div class="project_textbox">
+		    		<span class="project_textbox_title">온라인 주문 및 매장 관리 시스템 구축</span>
+		    		<span class="date">2019.08.01~2019.08.28</span>
+		    		
+		    		
+		    	</div>
+		    </div>
+	    </div>
+	    <div class="swiper-slide">Slide 2</div>
+	    <div class="swiper-slide">Slide 3</div>
+	  </div>
+	  <div class="swiper-pagination"></div>
+	  
+	  <!-- 슬라이드 버튼 -->
+	  <div class="swiper-button-prev"></div>
+	  <div class="swiper-button-next"></div>
+	</div>
 </section>
+<section class="footer">
 
-<div align="center" style="padding: 200px 0px;">
-  <div data-aos="flip-left"
-   data-aos-easing="ease-out-cubic"
-   data-aos-duration="2000"
-   class="b">
-    flip-left
-    <i class="fas fa-clock"></i>
-	<i class="fas fa-user-friends"></i>
-  </div>
-</div>
-
+</section>
+<script type="text/javascript">
+	var mySwiper = new Swiper ('.swiper-container', {
+		loop: true,
+		
+		pagination: {
+			el : '.swiper-pagination',
+	        clickable : true,
+		},
+		
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	})
+</script>
 </body>
 </html>
