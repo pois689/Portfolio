@@ -82,13 +82,38 @@ body{
 /* about */
 .about {
 	background-color: #fff;
-	height: 300px;
 }
 
 .about_box {
+	margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 100%;
+    max-width: 71.25rem;
+}
+
+.about_box_box {
 	display: flex;
 	justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
+}
+
+.about_content {
+	display: flex;
+	width: 33.3333%;
+	align-items: center;
+	justify-content: center;
+}
+
+.about_content2 {
+	font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0 0 10px 15px;
+}
+
+.about_content3 {
+	margin: 0 0 0 15px;
+	width: 200px;
 }
 
 .about_text {
