@@ -55,8 +55,11 @@ body{
 }
 
 .portfollo_header_text {
-	margin: 0 300px 300px 300px;
-    padding-top: 280px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .portfollo_header_text_title {
@@ -132,6 +135,8 @@ body{
 	font-size: 35px;
 	color: #555555;
 	padding: 20px 0px;
+	width: 90%;
+	margin: 0 5%;
 }
 
 .profile {
