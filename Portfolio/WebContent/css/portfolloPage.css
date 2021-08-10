@@ -219,15 +219,16 @@ nav ul.trans li {
 .title {
 	text-align: center;
 	margin: 0px;
-	font-size: 35px;
-	color: #555555;
+	font-size: 50px;
+	color: #000000;
 	padding: 20px 0px;
 	width: 90%;
 	margin: 0 5%;
+	font-family: Black Han Sans,sans-serif;
 }
 
 .profile {
-	background-color: #e2e2e2;
+	background-color: #F9F7F0;
 	width: 100%;
 }
 
@@ -279,7 +280,7 @@ nav ul.trans li {
 
 /* 스킬 */
 .skill {
-	background-color: #ffe48f;
+	background-color: #f9c51d;
 	height: 1000px;
 	width: 100%;
 }
@@ -313,6 +314,7 @@ nav ul.trans li {
 	text-align: center;
 	color: #555555;
 	font-weight: 600;
+	font-family: Black Han Sans,sans-serif;
 }
 
 .skill_content_title span {
@@ -341,7 +343,7 @@ nav ul.trans li {
 
 .project {
 	width: 100%;
-	background-color: #e2e2e2;
+	background-color: #f4f4f4;
 }
 
 .project_imgbox1, .project_imgbox2, .project_imgbox3 {
