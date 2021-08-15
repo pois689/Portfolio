@@ -252,6 +252,7 @@ nav ul.trans li {
 	height: 400px;
 	display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .division {
@@ -452,4 +453,54 @@ nav ul.trans li {
     font-size: .9rem;
     color: #f5f5f5;
 }
+
+/* 반응형 */
+@media screen and (max-width: 1620px) {
+	.profile_aboutMe_area {
+		margin: 0px 50px;
+	}
+}
+
+@media screen and (max-width: 1320px) {
+	.profile_aboutMe_area {
+		margin: 0px 0px;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.profile_aboutMe_area_text ul li {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.profile_aboutMe_area_img {
+		width: 25%;
+    	height: 360px;
+    	margin-right: 0%;
+	}
+	
+	.profile_aboutMe_area_text {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	.date {
+		font-size: 11px;
+	}
+}
+
+
+@media screen and (max-width: 740px) {
+	.profile_aboutMe_area_text ul li {
+		font-size: 11px;
+	}
+	
+	.date {
+		padding-left: 0px;
+	}
+}
+
+
 
