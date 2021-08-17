@@ -33,7 +33,7 @@ $(window).scroll(function(){
 $(window).resize(function (){
 	  // width값을 가져오기
 	  var width_size = window.outerWidth;
-	  
+	   
 	  // 740 이하인지 if문으로 확인
 	  if (width_size <= 740) {
 		  
@@ -47,5 +47,6 @@ $(window).resize(function (){
 			 $('#br').remove();
 		 }
 	  }
+	  
 	});
 

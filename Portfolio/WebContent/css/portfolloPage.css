@@ -353,19 +353,21 @@ nav ul.trans li {
     position: relative;
     z-index: 1;
     margin: 0 3% 5% 0%;
+    width: 40%;
 }
 
 .pc_img {
-	width: 800px;
+	width: 100%;
+    height: 100%;
 }
 
 .project_imgbox1:nth-child(1):after {
     content: "";
     position: absolute;
     transform: translateX(-108%);
-    top: 42.5px;
-    width: 689px;
-    height: 390px;
+    top: 8%;
+    width: 86%;
+    height: 61%;
     background: url(../images/suhbuway.png);
     background-size: cover;
 }
@@ -373,9 +375,9 @@ nav ul.trans li {
     content: "";
     position: absolute;
     transform: translateX(-108%);
-    top: 42.5px;
-    width: 689px;
-    height: 390px;
+    top: 8%;
+    width: 86%;
+    height: 61%;
     background: url(../images/virtualairtravel.png);
     background-size: cover;
 }
@@ -383,18 +385,21 @@ nav ul.trans li {
     content: "";
     position: absolute;
     transform: translateX(-108%);
-    top: 42.5px;
-    width: 689px;
-    height: 390px;
+    top: 8%;
+    width: 86%;
+    height: 61%;
     background: url(../images/movie.png);
     background-size: cover;
 }
 
-.project_box .project_textbox {
-	width: 500px; line-height: 30px; font-size: 15px;
+.project_textbox {
+	width: 500px;
+	line-height: 30px;
+	font-size: 15px;
+	margin-bottom: 8%;
 }
 
-.project_box .project_textbox button {
+.project_textbox button {
 	width: 170px;
 	height: 50px;
 	border-image: linear-gradient(140deg, #926ab1 0%, #d68cd6 100%);
@@ -403,14 +408,14 @@ nav ul.trans li {
 	background-color: #e2e2e2;
 }
 
-.project_box .project_textbox button:hover {
+.project_textbox button:hover {
 	border: 0;
 	background-image: linear-gradient(140deg, #926ab1 0%, #d68cd6 100%);
 	color:#fff;
 	cursor: pointer;
 }
 
-.project_box {
+.project_box1, .project_box2, .project_box3 {
 	display: flex;
 	justify-content: center;
 }
@@ -461,15 +466,73 @@ nav ul.trans li {
 	}
 }
 
+@media screen and (max-width: 1530px) {
+	.skill_content {
+		width: 14rem;
+	}
+	
+	.skill_content_title_end {
+		left: 85%;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+		left: 101%;
+	}
+}
+
 @media screen and (max-width: 1320px) {
 	.profile_aboutMe_area {
 		margin: 0px 0px;
+	}
+	
+	.skill_content {
+		width: 12rem;
+	}
+	
+	.skill_content_title_end {
+    	left: 91%;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+    	left: 110%;
+	}
+	
+	.skill_content_title_business {
+    	left: 80%;
 	}
 }
 
 @media screen and (max-width: 1220px) {
 	.profile_aboutMe_area_text ul li {
 		font-size: 13px;
+	}
+	
+	.project_textbox {
+		font-size: 14px;
+	}
+	
+	.skill_content {
+		width: 9rem;
+	}
+	
+	.skill_content_title_end {
+    	left: 105%;
+    	width: 146px;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+	    left: 129%;
+	    width: 80px;
+	}
+	
+	.skill_content_title_business {
+	    left: 102%;
+	    width: 160px;
+	}
+	
+	.skill_icon {
+	    width: 110px;
+	    height: 105px;
 	}
 }
 
@@ -483,14 +546,71 @@ nav ul.trans li {
 	.profile_aboutMe_area_text {
 		width: 50%;
 	}
+	
+	.project_textbox {
+		font-size: 14px;
+		line-height: 25px;
+	}
+	
+	.project_imgbox1, .project_imgbox2, .project_imgbox3 {
+		margin: 0 3% 5% 3%;
+	}
+	
+	.about_content3 {
+		font-size: 14px;
+	}
+	
+	.about_content2 {
+		font-size: 1rem;
+	}
+	
+	.skill_content {
+		width: 6rem;
+	}
+	
+	.skill_content_title {
+		font-size: 22px;
+	}
+	
+	.skill_content_title_end {
+	    left: 155%;
+	    width: 104px;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+	    left: 169%;
+	}
+	
+	.skill_content_title_business {
+	    left: 151%;
+	    width: 118px;
+	}
+	
+	.skill_icon {
+		margin: 0px 0px 20px 0px;
+		width: 80px;
+    	height: 80px;
+	}
 }
 
 @media screen and (max-width: 785px) {
 	.date {
 		font-size: 11px;
 	}
+	
+	.project_textbox {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	
+	.about_content3 {
+		font-size: 12px;
+	}
+	
+	.about_content2 {
+		font-size: 0.9rem;
+	}
 }
-
 
 @media screen and (max-width: 740px) {
 	.profile_aboutMe_area_text ul li {
@@ -499,6 +619,16 @@ nav ul.trans li {
 	
 	.date {
 		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.about_content3 {
+		font-size: 10px;
+	}
+	
+	.about_content2 {
+		font-size: 0.7rem;
 	}
 }
 
