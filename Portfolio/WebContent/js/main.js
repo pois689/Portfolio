@@ -33,7 +33,10 @@ $(window).scroll(function(){
 $(window).resize(function (){
 	  // width값을 가져오기
 	  var width_size = window.outerWidth;
-	   
+	  var project1 = '<div data-aos="fade-right" data-aos-duration="1200" class="project_imgbox2"><img alt="pc" src="./images/pc.png" class="pc_img"></div>';
+	  var project2 = '<div class="project_imgbox1"><img alt="pc" src="./images/pc.png" class="pc_img"></div>';
+	  var project3 = '<div class="project_imgbox3"><img alt="pc" src="./images/pc.png" class="pc_img"></div>';
+		  
 	  // 740 이하인지 if문으로 확인
 	  if (width_size <= 740) {
 		  
@@ -48,5 +51,28 @@ $(window).resize(function (){
 		 }
 	  }
 	  
+	  // 800 이하인지 if문으로 확인
+	  if (width_size <= 800) {
+		  if($('.project_imgbox2').length == 1) { // 이미지 박스가 존재하면 삭제
+			  $('.project_imgbox2').remove();
+		  }
+		  if($('.project_imgbox1').length == 1) {
+			  $('.project_imgbox1').remove();
+		  }
+		  if($('.project_imgbox3').length == 1) {
+			  $('.project_imgbox3').remove();
+		  }
+		  
+	  } else {
+		  if($('.project_imgbox2').length == 0) { // 이미지 박스가 존재하지 않으면 불러오기
+			  $('.project_box1').prepend(project1);
+	  	  }
+		  if($('.project_imgbox1').length == 0) {
+			  $('.project_box2').prepend(project2);
+		  }
+		  if($('.project_imgbox3').length == 0) {
+			  $('.project_box3').prepend(project3);
+		  }
+	  }
 	});
 
