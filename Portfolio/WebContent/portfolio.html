@@ -28,7 +28,10 @@
 	data-aos-delay : 지정된 시간 이후에 이벤트 실행
 -->
 <script> 
-   AOS.init();
+   AOS.init({
+	   disable: false, // 'phone', 'tablet', 'mobile' // 모바일, 태블릿 사용 불가
+	   once: true,
+   });
 </script>
 
 <!-- 네비게이션바 -->
