@@ -1,0 +1,636 @@
+@charset "UTF-8";
+
+body{
+	margin: 0px;
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif, 'Malgun Gothic','Roboto', Dotum, '돋움', Gulim,Helvetica;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/test3.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    -ms-word-break: keep-all;
+    word-break: keep-all;
+    font-size: 17px;
+    width: 100%
+}
+
+a {text-decoration: none;}
+
+/* 메뉴 */
+nav {
+    position: fixed;
+    top: 25px;
+    right: 10px;
+    z-index: 50;
+}
+nav .menuBtn {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 41px;
+    height: 41px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    z-index: 5;
+}
+nav .menuBtn span {
+    position: absolute;
+    left: 50%;
+    margin-left: -35%;
+    width: 70%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: .3s;
+}
+.menuBtn span:nth-child(1) {
+    top: 11px;
+}
+.menuBtn span:nth-child(2) {
+    top: 19px;
+}
+.menuBtn span:nth-child(3) {
+    top: 27px;
+}
+.menuBtn.active {
+    background-color: #fff;
+    transition: .5s;
+}
+.menuBtn.active span {
+	background-color: #303a48;
+    left: 70%;
+}
+.menuBtn.active span:nth-child(1) {
+    transform: rotate(38deg);
+}
+.menuBtn.active span:nth-child(2) {
+    width: 80%;
+    transform-origin: right center;
+    margin-left: -60%;
+}
+.menuBtn.active span:nth-child(3) {
+    transform: rotate(-38deg);
+}
+
+nav ul {
+    display: flex;
+    position: absolute;
+    top: -18px;
+    right: 0px;
+    background: linear-gradient(to right, #413f3a, #303a48);
+    border-radius: 24px;
+    padding: 13px 20px 13px 28px;
+    opacity: 0;
+    z-index: 2;
+    transition: 1s;
+    list-style: none;
+}
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+    opacity: 0;
+}
+nav ul a {
+    display: block;
+    padding: 2px 3px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    transition: .3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0%;
+    height: 9px;
+    background-color: rgba(255,255,255,.3);
+    transform: skew(-20deg);
+    transition: .4s;
+    z-index: -1;
+}
+nav ul li:hover a::after {
+    width: 100%;
+}
+/* 메뉴 애니메이션 */
+nav ul.trans {
+    display: flex;
+    padding: 13px 50px 13px 20px;
+    opacity: 1;
+}
+nav ul.trans li {
+    opacity: 1;
+}
+
+.menuBtn.show {
+    border-color: #303a48;;
+}
+ .menuBtn.show span{
+    background-color: #303a48;
+}
+/* 메뉴 끝 */
+
+/* 헤더 */
+.portfollo_header {
+    text-align: center;
+    width: 100%;
+}
+
+.portfollo_header_text {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfollo_header_text_title {
+	font-size: 45px;
+	color: white;
+	font-weight: 900;
+}
+
+.portfollo_header_text hr {
+	width: 8rem;
+    height: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-top: .2rem solid #0cfaff;
+}
+
+.portfollo_header_text_greet {
+	color: hsla(0,0%,100%,.75);
+	line-height: 35px;
+	font-size: 20px;
+	margin-bottom: 5%;
+}
+
+/* about */
+.about {
+	background-color: #fff;
+	width: 100%;
+}
+
+.about_box {
+	margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 100%;
+    max-width: 71.25rem;
+}
+
+.about_box_box {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.about_content {
+	display: flex;
+	width: 33.3333%;
+	align-items: center;
+	justify-content: center;
+}
+
+.about_content2 {
+	font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0 0 0 15px;
+}
+
+.about_content3 {
+	margin: 0 0 0 15px;
+	width: 200px;
+}
+
+.about_text {
+	text-align: left;
+	width: 50%;
+	margin: 0px 30%;
+	padding-top: 20px;
+}
+
+/* 프로필 */
+.title {
+	text-align: center;
+	margin: 0px;
+	font-size: 50px;
+	color: #000000;
+	padding: 20px 0px;
+	width: 90%;
+	margin: 0 5%;
+	font-family: Black Han Sans,sans-serif;
+}
+
+.profile {
+	background-color: #F9F7F0;
+	width: 100%;
+}
+
+.profile_aboutMe_area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 200px;
+	padding-bottom: 60px;
+}
+
+.profile_aboutMe_area_img {
+	width : 30%;
+	height: 400px;
+	margin-right: 8%;
+}
+
+.profile_aboutMe_area_text {
+	width : 40%;
+	height: 400px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.division {
+    margin: 15px 0px;
+    background: #666666;
+    height: 1px;
+}
+
+.institution {
+	font-weight: 600;
+}
+
+.date {
+	padding-left : 8px;
+	color: #aaaaaa
+}
+
+.content {
+	color: #686868;
+}
+
+.profile_img {
+	width: 100%;
+    height: 100%;
+    border-radius: 40%;
+}
+
+/* 스킬 */
+.skill {
+	background-color: #f9c51d;
+	height: 1000px;
+	width: 100%;
+}
+
+.skill .skill_box {
+	display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    height: calc(100% - (7.5rem + 1px));
+    justify-content: center;
+}
+
+.skill_icon {
+	margin : 0px 15px 20px 15px;
+	width: 130px;
+	height: 110px;
+}
+
+.skill_content {
+	border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+    -webkit-box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+    width: 17rem;
+    margin: 0px 20px 30px 20px;
+    padding: 0 30px;
+}
+
+.skill_content_title {
+	position: relative;
+	text-align: center;
+	color: #555555;
+	font-weight: 600;
+	font-family: Black Han Sans,sans-serif;
+}
+
+.skill_content_title span {
+    height: 20px;
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    bottom: -2px;
+    margin-left: -155px;
+    transform: skew(-20deg);
+}
+
+.skill_content_title_end {
+	left: 80%;
+	width: 145px;
+}
+
+.skill_content_title_etc, .skill_content_title_tool {
+	left: 92%;
+    width: 80px;
+}
+
+.skill_content_title_business {
+	left: 70%;
+    width: 200px;
+}
+
+.project {
+	width: 100%;
+	background-color: #f4f4f4;
+}
+
+.project_imgbox1, .project_imgbox2, .project_imgbox3 {
+	overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0 3% 5% 0%;
+    width: 40%;
+}
+
+.pc_img {
+	width: 100%;
+    height: 100%;
+}
+
+.project_imgbox1:nth-child(1):after {
+    content: "";
+    position: absolute;
+    transform: translateX(-108%);
+    top: 8%;
+    width: 86%;
+    height: 61%;
+    background: url(../images/suhbuway.png);
+    background-size: cover;
+}
+.project_imgbox2:nth-child(1):after {
+    content: "";
+    position: absolute;
+    transform: translateX(-108%);
+    top: 8%;
+    width: 86%;
+    height: 61%;
+    background: url(../images/virtualairtravel.png);
+    background-size: cover;
+}
+.project_imgbox3:nth-child(1):after {
+    content: "";
+    position: absolute;
+    transform: translateX(-108%);
+    top: 8%;
+    width: 86%;
+    height: 61%;
+    background: url(../images/movie.png);
+    background-size: cover;
+}
+
+.project_textbox {
+	width: 500px;
+	line-height: 30px;
+	font-size: 15px;
+	margin-bottom: 8%;
+}
+
+.project_textbox button {
+	width: 170px;
+	height: 50px;
+	border-image: linear-gradient(140deg, #926ab1 0%, #d68cd6 100%);
+	border-image-slice: 1;
+	margin-left: 5px;
+	background-color: #e2e2e2;
+}
+
+.project_textbox button:hover {
+	border: 0;
+	background-image: linear-gradient(140deg, #926ab1 0%, #d68cd6 100%);
+	color:#fff;
+	cursor: pointer;
+}
+
+.project_box1, .project_box2, .project_box3 {
+	display: flex;
+	justify-content: center;
+}
+
+.project_textbox_title {
+	color: #767676;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.footer {
+	height: 8rem;
+    padding-top: 3rem;
+    background-color: #222;
+    text-align: center;
+}
+
+.footer_icon_box {
+	margin-bottom: 1rem;
+}
+
+.footer_icon {
+	position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding: 2px;
+    margin: 0 .5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.Footer_icon_img {
+	width: 100%;
+}
+
+.footer_copyright {
+	font-weight: 400;
+    font-size: .9rem;
+    color: #f5f5f5;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1620px) {
+	.profile_aboutMe_area {
+		margin: 0px 50px;
+	}
+}
+
+@media screen and (max-width: 1530px) {
+	.skill_content {
+		width: 14rem;
+	}
+	
+	.skill_content_title_end {
+		left: 85%;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+		left: 101%;
+	}
+}
+
+@media screen and (max-width: 1320px) {
+	.profile_aboutMe_area {
+		margin: 0px 0px;
+	}
+	
+	.skill_content {
+		width: 12rem;
+	}
+	
+	.skill_content_title_end {
+    	left: 91%;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+    	left: 110%;
+	}
+	
+	.skill_content_title_business {
+    	left: 80%;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.profile_aboutMe_area_text ul li {
+		font-size: 13px;
+	}
+	
+	.project_textbox {
+		font-size: 14px;
+	}
+	
+	.skill_content {
+		width: 9rem;
+	}
+	
+	.skill_content_title_end {
+    	left: 105%;
+    	width: 146px;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+	    left: 129%;
+	    width: 80px;
+	}
+	
+	.skill_content_title_business {
+	    left: 102%;
+	    width: 160px;
+	}
+	
+	.skill_icon {
+	    width: 110px;
+	    height: 105px;
+	}
+}
+
+@media screen and (max-width: 975px) {
+	.profile_aboutMe_area_img {
+		width: 25%;
+    	height: 360px;
+    	margin-right: 0%;
+	}
+	
+	.profile_aboutMe_area_text {
+		width: 50%;
+	}
+	
+	.project_textbox {
+		font-size: 14px;
+		line-height: 25px;
+	}
+	
+	.project_imgbox1, .project_imgbox2, .project_imgbox3 {
+		margin: 0 3% 5% 3%;
+	}
+	
+	.about_content3 {
+		font-size: 14px;
+	}
+	
+	.about_content2 {
+		font-size: 1rem;
+	}
+	
+	.skill_content {
+		width: 6rem;
+	}
+	
+	.skill_content_title {
+		font-size: 22px;
+	}
+	
+	.skill_content_title_end {
+	    left: 155%;
+	    width: 104px;
+	}
+	
+	.skill_content_title_etc, .skill_content_title_tool {
+	    left: 169%;
+	}
+	
+	.skill_content_title_business {
+	    left: 151%;
+	    width: 118px;
+	}
+	
+	.skill_icon {
+		margin: 0px 0px 20px 0px;
+		width: 80px;
+    	height: 80px;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	.date {
+		font-size: 11px;
+	}
+	
+	.project_textbox {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	
+	.about_content3 {
+		font-size: 12px;
+	}
+	
+	.about_content2 {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.profile_aboutMe_area_text ul li {
+		font-size: 11px;
+	}
+	
+	.date {
+		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.about_content3 {
+		font-size: 10px;
+	}
+	
+	.about_content2 {
+		font-size: 0.7rem;
+	}
+}
+
+
+
