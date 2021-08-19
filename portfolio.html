@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<link rel="stylesheet" href="./css/portfolloPage.css">
+
+<!-- font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&amp;;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&amp;;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Noto+Sans+KR:wght@400;700;900&amp;display=swap">
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<!-- 
+	data-aos-anchor : 클래스 선택자를 통해 이벤트가 실행될 때 같이 실행
+	data-aos-duration : 이벤트 실행 시간
+	data-aos-delay : 지정된 시간 이후에 이벤트 실행
+-->
+<script> 
+   AOS.init({
+	   disable: false, // 'phone', 'tablet', 'mobile' // 모바일, 태블릿 사용 불가
+	   once: true,
+   });
+</script>
+
+<!-- 네비게이션바 -->
+<nav>
+	<a href="" class="menuBtn">
+		<span></span>
+        <span></span>
+        <span></span>
+   </a>
+		<ul class="">
+			<li><a href="#about">About</a></li>
+            <li><a href="#profile">Career</a></li>
+            <li><a href="#skill">skills</a></li>
+            <li><a href="#project">project</a></li>
+		</ul>
+	</nav>
+<!-- 네비게이션바 end -->
+
+<!-- header -->
+<section class="portfollo_header">
+	<div class="portfollo_header_text">
+		<div data-aos="fade-right" data-aos-duration="1500" class="portfollo_header_text_title">김승현<br>웹 개발자 포트폴리오</div>
+		<hr>
+		<div data-aos="fade-up" data-aos-duration="1800" data-aos-delay="600" class="portfollo_header_text_greet">
+			안녕하세요.<br><strong>항상 새로운 것을 배우기 위해 도전하며, 뒤쳐지지 않는 인재가 되겠습니다.</strong>
+		</div>
+	</div>
+</section>
+<!-- header end -->
+
+<!-- aboutMe -->
+<section class="about" id="about">
+	<h1 data-aos="flip-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor=".about_content" class="title">About</h1>
+	<div class="about_box">
+		<div class="about_box_box">
+			<div class="about_content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000" data-aos-anchor=".about_content">
+				<i class="fas fa-user-alt fa-3x"></i>
+				<div>
+					<div class="about_content2">이름</div>
+					<div class="about_content3">김승현</div>
+				</div>
+			</div>
+			<div class="about_content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1400" data-aos-anchor=".about_content">
+				<i class="fas fa-calendar fa-3x"></i>
+				<div>
+					<div class="about_content2">생년월일</div>
+					<div class="about_content3">1995.02.17</div>
+				</div>
+			</div>
+			<div class="about_content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1800" data-aos-anchor=".about_content">
+				<i class="fas fa-map-marker-alt fa-3x"></i>
+				<div>
+					<div class="about_content2">주소</div>
+					<div class="about_content3">경기도 광명시</div>
+				</div>
+			</div>
+		</div>
+		<div class="about_box_box">
+			<div class="about_content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2200" data-aos-anchor=".about_content">
+				<i class="fas fa-mobile-alt fa-3x"></i>
+				<div>
+					<div class="about_content2">연락처</div>
+					<div class="about_content3">010-4185-2606</div>
+				</div>
+			</div>
+			<div class="about_content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2600" data-aos-anchor=".about_content">
+				<i class="fas fa-envelope fa-3x"></i>
+				<div>
+					<div class="about_content2">이메일</div>
+					<div class="about_content3">poia689@naver.com</div>
+				</div>
+			</div>
+			<div class="about_content" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="3000" data-aos-anchor=".about_content">
+				<i class="fas fa-pencil-alt fa-3x"></i>
+				<div>
+					<div class="about_content2">학력</div>
+					<div class="about_content3">유한대학교 (정보통신학과)</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- aboutMe end -->
+
+<!-- 이력 소개 -->
+<section id="profile" class="profile">
+	<h1 data-aos="flip-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor=".profile_aboutMe_area_img" class="title">Career</h1>
+	<div class="profile_aboutMe_area">
+		<div class="profile_aboutMe_area_img" data-aos="flip-up" data-aos-duration="1500">
+			<img class="profile_img" alt="profile" src="./images/profile.jpg">
+		</div>
+		<hr class="division">
+		<div class="profile_aboutMe_area_text">
+				<ul style="line-height: 40px; padding-left: 60px;">
+					<li data-aos="fade-right" data-aos-duration="1600" data-aos-delay="1100" data-aos-anchor=".profile_aboutMe_area_img">
+						<span class="institution">한국 소프트웨어 기술 진흥 협회</span>
+						<span class="date">2019.04.29 ~ 2019.08.29</span>
+						<br>
+						<span class="content">SW인재 양성 과정 참가</span>
+					</li>
+					<li data-aos="fade-right" data-aos-duration="1600" data-aos-delay="1500" data-aos-anchor=".profile_aboutMe_area_img">
+						<span class="institution">더조은 컴퓨터 아트 학원</span>
+						<span class="date">2020.05.28 ~ 2020.08.26</span>
+						<br>
+						<span class="content">게임 프로그래밍 양성 과정 참가</span>
+					</li>
+					<li data-aos="fade-right" data-aos-duration="1600" data-aos-delay="1900" data-aos-anchor=".profile_aboutMe_area_img">
+						<span class="institution">월드잡 프렌즈</span>
+						<span class="date">2020.12.07 ~ 2021.06.28</span>
+						<br>
+						<span class="content">소프트웨어 연수 과정 참가 (일본 취업 과정)</span>
+					</li>
+				</ul>
+		</div>
+	</div>
+</section>
+<!-- 이력 소개 end-->
+
+<!-- 스킬 -->
+<section id="skill" class="skill">
+	<h1 data-aos="flip-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor=".skill_content" class="title">Skills</h1>
+	<div class="skill_box">
+		<div class="skill_content" data-aos="flip-right" data-aos-duration="1400" data-aos-delay="600" data-aos-anchor=".skill_content">
+			<h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" class="skill_content_title">
+				<span class="skill_content_title_end"></span>Front-end
+			</h2>
+			<div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" style="text-align: center;">
+				<img class="skill_icon" alt="html" src="./images/html.png">
+				<img class="skill_icon" alt="css" src="./images/css.png">
+				<img class="skill_icon" alt="javascript" src="./images/javascript.png">
+				<img class="skill_icon" alt="jquery" src="./images/jquery.png">
+				<img class="skill_icon" alt="jsp" src="./images/jsp.png">
+			</div>
+		</div>
+		
+		<div class="skill_content" data-aos="flip-right" data-aos-duration="1400" data-aos-delay="800" data-aos-anchor=".skill_content">
+			<h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" class="skill_content_title">
+				<span class="skill_content_title_end"></span>Back-end
+			</h2>
+			<div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" style="text-align: center;">
+			<img class="skill_icon" alt="java" src="./images/java.jpg">
+			<img class="skill_icon" alt="oracle" src="./images/oracle.png">
+			</div>
+		</div>
+		
+		<div class="skill_content" data-aos="flip-right" data-aos-duration="1400" data-aos-delay="1100" data-aos-anchor=".skill_content">
+			<h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" class="skill_content_title">
+				<span class="skill_content_title_etc"></span>etc
+			</h2>
+			<div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" style="text-align: center;">
+				<img class="skill_icon" alt="linux" src="./images/linux.jpg">
+				<img class="skill_icon" alt="c" src="./images/c.png">
+			</div>
+		</div>
+		
+		<div class="skill_content" data-aos="flip-right" data-aos-duration="1400" data-aos-delay="1400" data-aos-anchor=".skill_content">
+			<h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" class="skill_content_title">
+				<span class="skill_content_title_tool"></span>Tool
+			</h2>
+			<div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" style="text-align: center;">
+				<img class="skill_icon" alt="eclipse" src="./images/eclipse.png">
+				<img class="skill_icon" alt="sts" src="./images/sts.png">
+				<img class="skill_icon" alt="sql" src="./images/sql.jpg">
+				<img class="skill_icon" alt="unity" src="./images/unity.jpg">
+			</div>
+		</div>
+		
+		<div class="skill_content" data-aos="flip-right" data-aos-duration="1400" data-aos-delay="1700" data-aos-anchor=".skill_content">
+			<h2 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" class="skill_content_title">
+				<span class="skill_content_title_business"></span>Business Tool
+			</h2>
+			<div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2300" data-aos-anchor=".skill_content" style="text-align: center;">
+				<img class="skill_icon" alt="slack" src="./images/slack.png">
+				<img class="skill_icon" alt="trello" src="./images/trello.png">
+				<img class="skill_icon" alt="clickup" src="./images/clickup.png">
+				<img class="skill_icon" alt="github" src="./images/github.png">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 스킬 end -->
+
+<!-- project -->
+<section id="project" class="project">
+	<h1 data-aos="flip-up" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor=".project_imgbox2" class="title">Project</h1>
+	<!-- Slider main container -->
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	  	<div class="swiper-slide">
+	    	<div class="project_box1">
+		    	<div data-aos="fade-right" data-aos-duration="1200" class="project_imgbox2">
+		    		<img alt="pc" src="./images/pc.png" class="pc_img">
+		    	</div>
+		    	<div class="project_textbox">
+		    		<h3 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900" data-aos-anchor=".project_imgbox2" class="project_textbox_title">일본 여행 정보 사이트</h3>
+		    		<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500" data-aos-anchor=".project_imgbox2">
+			    		<i class="fas fa-clock"></i>
+			    		<span>2021.04.27 ~ 2021.06.25</span>
+			    		<i class="fas fa-user-friends" style="margin-left: 6%;"></i>
+			    		<span>4명</span>
+			    		<div>
+			    			<h3>프로젝트 소개</h3> 
+			    			<p>구체적인 여행 계획에 필요한 정보들을 제공하여 유저에게 편의성 제공</p>
+			    		</div>
+			    		<div>
+			    			<h3>제공 서비스</h3>
+			    			<p> 
+			    			구글 로그인과 네이버 로그인 API를 이용하여 간편한 로그인이 가능 <br>
+							일본의 관광지 맛집 숙소 대중교통의 정보를 찾을 수 있는 서비스를 제공 <br>
+							평점과 댓글을 통해 자신의 경험을 타인과 공유 가능 <br>
+							</p>
+			    		</div>
+			    		<button type="button" onclick="location.href='https://github.com/pois689/VirtualAirTravel'">Github</button>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+	    <div class="swiper-slide">
+	    	<div class="project_box2">
+		    	<div class="project_imgbox1">
+		    		<img alt="pc" src="./images/pc.png" class="pc_img">
+		    	</div>
+		    	<div class="project_textbox">
+		    		<h3 class="project_textbox_title">온라인 주문 및 매장 관리 시스템 구축</h3>
+		    		<i class="fas fa-clock"></i>
+		    		<span>2019.08.01~2019.08.28</span>
+		    		<i class="fas fa-user-friends" style="margin-left: 6%;"></i>
+		    		<span>6명</span>
+		    		<div>
+		    			<h3>프로젝트 소개</h3> 
+		    			<p>직원들과 고객의 편의성을 고려하여 온라인 주문 및 매장 관리 서비스를 제공</p>
+		    		</div>
+		    		<div>
+		    			<h3>제공 서비스</h3>
+		    			<p> 
+		    			카카오 로그인 API를 이용하여 간편한 로그인이 가능 <br>
+						회원은 게시판 이용 및 최근 주문 내역 확인 가능 <br>
+						Google Map Api를 이용하여 근처 매장 위치 확인 가능 <br>
+						매장에서 직접 주문하는 것과 동일한 과정을 사이트 내에서도 가능하도록 구현 <br>
+						호스트는 주문 리스트 확인, 주문 취소, 메뉴 준비 가능 여부를 선택 가능 <br>
+						호스트는 회원 관리, 메뉴 추가 / 삭제 / 수정 및 매출 확인 가능
+						</p>
+		    		</div>
+		    		<button type="button" onclick="location.href='https://github.com/pois689/suhbuway-teamproject2'">Github</button>
+		    	</div>
+		    </div>
+	    </div>
+	    <div class="swiper-slide">
+	    	<div class="project_box3">
+		    	<div class="project_imgbox3">
+		    		<img alt="pc" src="./images/pc.png" class="pc_img">
+		    	</div>
+		    	<div class="project_textbox">
+		    		<h3 class="project_textbox_title">영화 리뷰 사이트</h3>
+		    		<i class="fas fa-clock"></i>
+		    		<span>2019.07.16 ~ 2019.07.26</span>
+		    		<i class="fas fa-user-friends" style="margin-left: 6%;"></i>
+		    		<span>5명</span>
+		    		<div>
+		    			<h3>프로젝트 소개</h3>
+		    			<p>재미와 웃음을 추구하는 현대인의 니즈를 반영하여 만든 사이트로 지친 일상 속에서 취향에 맞는 영화를 추천하는 서비스를 제공</p>
+		    		</div>
+		    		<div>
+		    			<h3>제공 서비스</h3>
+		    			<p> 
+		    			평점 기반으로 영화를 추천 <br>
+		    			예고편 줄거리 등장인물 등 관련 정보 확인이 가능 <br>
+						리뷰 페이지 및 댓글 기능으로 원활한 의견 공유가 가능 <br>
+						'좋아요' 기능으로 서로의 공감 여부를 수치화하여 이끌어 내도록 구현 <br>
+						</p>
+		    		</div>
+		    		<button type="button" onclick="location.href='https://github.com/Ahnjihyeon/MovieMove'">Github</button>
+		    	</div>
+		    </div>
+	    </div>
+	  </div>
+	  <div class="swiper-pagination"></div>
+	  
+	  <!-- 슬라이드 버튼 -->
+	  <div class="swiper-button-prev"></div>
+	  <div class="swiper-button-next"></div>
+	</div>
+</section>
+<!-- project end -->
+
+<section class="footer">
+	<div class="footer_icon_box">
+		<div class="footer_icon">
+			<img class="Footer_icon_img" src="./images/github2.png" onclick="location.href='https://github.com/pois689'" alt="github">
+		</div>
+	</div>
+	<div class="footer_copyright">© 2021. Kim Seung Hyun. All rights reserved.</div>
+</section>
+
+<script type="text/javascript">
+	var mySwiper = new Swiper ('.swiper-container', {
+		loop: false,
+		
+		pagination: {
+			el : '.swiper-pagination',
+	        clickable : true,
+		},
+		
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	})
+</script>
+</body>
+</html>
