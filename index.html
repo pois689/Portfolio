@@ -18,8 +18,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./js/jquery-3.6.0.min.js"></script>
-<script src="./js/main.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
 </head>
 <body>
 <!-- 
@@ -248,6 +248,9 @@
 		    		</div>
 		    	</div>
 		    </div>
+			<!-- 슬라이드 버튼 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
 	    </div>
 	    <div class="swiper-slide">
 	    	<div class="project_box2">
@@ -278,6 +281,9 @@
 		    		<button type="button" onclick="location.href='https://github.com/pois689/suhbuway-teamproject2'">Github</button>
 		    	</div>
 		    </div>
+		    <!-- 슬라이드 버튼 -->
+	 	    <div class="swiper-button-prev"></div>
+	  	    <div class="swiper-button-next"></div>
 	    </div>
 	    <div class="swiper-slide">
 	    	<div class="project_box3">
@@ -306,13 +312,11 @@
 		    		<button type="button" onclick="location.href='https://github.com/Ahnjihyeon/MovieMove'">Github</button>
 		    	</div>
 		    </div>
+			<!-- 슬라이드 버튼 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
 	    </div>
 	  </div>
-	  <div class="swiper-pagination"></div>
-	  
-	  <!-- 슬라이드 버튼 -->
-	  <div class="swiper-button-prev"></div>
-	  <div class="swiper-button-next"></div>
 	</div>
 </section>
 <!-- project end -->
@@ -327,19 +331,16 @@
 </section>
 
 <script type="text/javascript">
-	var mySwiper = new Swiper ('.swiper-container', {
-		loop: false,
+	
+		const swiper = new Swiper ('.swiper-container', {
+			loop: false,
+			
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		})
 		
-		pagination: {
-			el : '.swiper-pagination',
-	        clickable : true,
-		},
-		
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-	})
 </script>
 </body>
 </html>
